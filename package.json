@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "engines": {
     "node": "12.x"
-  }
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
