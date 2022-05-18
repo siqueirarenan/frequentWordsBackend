@@ -1,7 +1,7 @@
 import { AutomapperProfile, InjectMapper } from '@automapper/nestjs';
 import { createMap, Mapper } from '@automapper/core';
 import { Injectable } from '@nestjs/common';
-import { Word } from '../Word.entity';
+import { Word } from '../word.entity';
 import { WordResponseDto } from './wordResponse.dto';
 
 @Injectable()
