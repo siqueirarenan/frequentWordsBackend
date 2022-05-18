@@ -136,6 +136,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
     if (process.env.NODE_ENV && process.env.NODE_ENV != 'development') {
       errorList = errorList.map((err) => {
         delete err.stack;
+
         return err;
       });
     }
