@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { WordService } from './Word.service';
-import { WordController } from './Word.controller';
+import { WordService } from './word.service';
+import { WordController } from './word.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Word } from './word.entity';
 import { WordRepo } from './word.repository';
-import { WordProfile } from './DTO/Word.profile';
+import { WordProfile } from './DTO/word.profile';
 import { UserKnowlegeModule } from '../userKnowleges/userKnowlege.module';
 import { UserModule } from '../users/user.module';
 import { CustomJwtModule } from '../auth/jwt.module';

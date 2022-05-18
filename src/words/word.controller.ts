@@ -21,7 +21,7 @@ import { JwtDecorator } from '../_common/decorators/jwt.decorator';
 import { Roles } from '../_common/decorators/roles.decorator';
 import { ErrorDto } from '../_common/filters/DTO/errorList.dto';
 import { WordResponseDto } from './DTO/wordResponse.dto';
-import { WordService } from './Word.service';
+import { WordService } from './word.service';
 
 @ApiTags('Words')
 @Controller('words')

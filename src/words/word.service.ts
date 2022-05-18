@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Word } from './Word.entity';
+import { Word } from './word.entity';
 import { InjectMapper } from '@automapper/nestjs';
 import { Mapper } from '@automapper/core';
 import { WordResponseDto } from './DTO/wordResponse.dto';
