@@ -140,6 +140,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
         return err;
       });
     }
+
     newError.error = errorList;
 
     response.status(status).json(newError);
