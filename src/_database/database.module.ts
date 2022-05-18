@@ -6,7 +6,7 @@ import { DataSource } from 'typeorm';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: config().database.type,
+      type: 'postgres',
       host: config().database.host,
       port: config().database.port,
       username: config().database.username,
@@ -15,6 +15,9 @@ import { DataSource } from 'typeorm';
       schema: config().database.schema,
       autoLoadEntities: true,
       logging: process.env.NODE_ENV == 'development' ? true : false,
+      ssl: {
+        rejectUnauthorized: false,
+      }
     }),
   ],
 })
@@ -33,4 +36,7 @@ export default new DataSource({
   synchronize: false,
   migrations: ['src/_database/migrations/*.ts'],
   migrationsTransactionMode: 'each',
+  ssl: {
+    rejectUnauthorized: false,
+  }
 });
